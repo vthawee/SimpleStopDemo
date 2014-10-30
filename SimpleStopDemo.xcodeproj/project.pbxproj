@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B07438331A029DAE00CA6B8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07438321A029DAE00CA6B8B /* AppDelegate.swift */; };
-		B07438351A029DAE00CA6B8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07438341A029DAE00CA6B8B /* ViewController.swift */; };
 		B07438381A029DAF00CA6B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07438361A029DAF00CA6B8B /* Main.storyboard */; };
 		B074383A1A029DAF00CA6B8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07438391A029DAF00CA6B8B /* Images.xcassets */; };
 		B074383D1A029DAF00CA6B8B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B074383B1A029DAF00CA6B8B /* LaunchScreen.xib */; };
 		B07438491A029DAF00CA6B8B /* SimpleStopDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07438481A029DAF00CA6B8B /* SimpleStopDemoTests.swift */; };
+		B07438531A02A2E300CA6B8B /* SWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07438521A02A2E300CA6B8B /* SWViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		B074382D1A029DAE00CA6B8B /* SimpleStopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleStopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07438311A029DAE00CA6B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B07438321A029DAE00CA6B8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B07438341A029DAE00CA6B8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B07438371A029DAF00CA6B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B07438391A029DAF00CA6B8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B074383C1A029DAF00CA6B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B07438421A029DAF00CA6B8B /* SimpleStopDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleStopDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07438471A029DAF00CA6B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B07438481A029DAF00CA6B8B /* SimpleStopDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStopDemoTests.swift; sourceTree = "<group>"; };
+		B07438521A02A2E300CA6B8B /* SWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				B07438321A029DAE00CA6B8B /* AppDelegate.swift */,
-				B07438341A029DAE00CA6B8B /* ViewController.swift */,
 				B07438361A029DAF00CA6B8B /* Main.storyboard */,
 				B07438391A029DAF00CA6B8B /* Images.xcassets */,
 				B074383B1A029DAF00CA6B8B /* LaunchScreen.xib */,
 				B07438301A029DAE00CA6B8B /* Supporting Files */,
+				B07438521A02A2E300CA6B8B /* SWViewController.swift */,
 			);
 			path = SimpleStopDemo;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B07438351A029DAE00CA6B8B /* ViewController.swift in Sources */,
+				B07438531A02A2E300CA6B8B /* SWViewController.swift in Sources */,
 				B07438331A029DAE00CA6B8B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +272,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -289,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -314,7 +314,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -325,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -336,7 +336,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = SimpleStopDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -346,7 +348,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = SimpleStopDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
